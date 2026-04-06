@@ -13,6 +13,9 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
 
+      - name: style
+        run : npm lint
+
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
